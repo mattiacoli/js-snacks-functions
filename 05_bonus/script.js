@@ -7,12 +7,42 @@ e buonasera se è sera (oltre le 17)
 
 const name = 'Mario';
 
+/* const date = new Date
+const hour = date.getHours()
+
+if(hour <= 13){
+  console.log(`Buongiorno ${name}`);
+  
+} else if (hour <= 17){
+  console.log(`Buon pomeriggio ${name}`)
+} else if (hour > 17){
+  console.log(`Buona sera ${name}`);
+}
+ */
+
 
 // Dichiara la funzione qui.
 
+function salutiOrari(nome) {
+  const date = new Date
+  const hour = date.getHours()
+
+  if (hour <= 13) {
+    return `Buongiorno ${nome}`;
+
+  } else if (hour <= 17) {
+    return `Buon pomeriggio ${nome}`
+
+  } else if (hour > 17) {
+    return `Buona sera ${nome}`;
+  }
+
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
+const saluta = salutiOrari(name)
+console.log(saluta);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
