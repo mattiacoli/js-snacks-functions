@@ -3,10 +3,32 @@
 const word = 'javascript';
 
 
+
 // Dichiara la funzione qui.
 
+function contaVocali(str){
+
+ 
+
+  const vowels = 'aeiou'
+
+  let vowelsCount = 0
+
+
+  for (let i = 0; i < str.length; i++) {
+    const letters = str[i];
+
+    if (vowels.indexOf(letters) !== -1) {
+      vowelsCount++
+    }
+  }
+
+  return vowelsCount
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+
+console.log(contaVocali(word));
 
 
 
