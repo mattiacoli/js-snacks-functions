@@ -6,14 +6,13 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 
-function contaVocali(str){
+function contaVocali(str) {
 
- 
+  str = str.toLowerCase()
 
   const vowels = 'aeiou'
 
   let vowelsCount = 0
-
 
   for (let i = 0; i < str.length; i++) {
     const letters = str[i];
